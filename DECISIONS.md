@@ -106,15 +106,15 @@ These come from fixed rules in code, not AI.
 
 ---
 
-## D7 · Cutoff date · Decided (inclusion rule Open)
+## D7 · Cutoff date · Implemented, awaiting team OK
 
 **Rule:** Results are calculated "as of" a selected date. Payments after that date are excluded.
 
-**Open:** Is a payment dated **on** the cutoff date included? Proposed: **yes, include it**. Confirm and test.
+**Implemented (claude/engine-fixes):** a payment dated **on** the cutoff date is included. Test C1.
 
 ---
 
-## O1 · One unclear payment holds what? · Open
+## O1 · One unclear payment holds what? · Implemented, awaiting team OK
 
 **Current behavior:** One unresolved payment holds the **whole batch** for review.
 
@@ -122,17 +122,23 @@ These come from fixed rules in code, not AI.
 
 **Why it matters:** In a real company file, one bad row would otherwise freeze every result. That would break the demo with a judge's data.
 
+**Implemented (claude/engine-fixes):** an unclear payment holds only the invoices it could belong to: the referenced invoice and that vendor's invoices. Each issue lists what it `affects`. Test B3.
+
 ---
 
-## O2 · Refunds, credits and reversals · Open
+## O2 · Refunds, credits and reversals · Implemented, awaiting team OK
 
 **Question:** If a vendor refunds $250, does that cancel a $250 overpayment?
 
 **Proposed for this weekend:** Hold any invoice with a refund, credit or reversal for review, with the next step "Confirm the refund in the payment register." Reason: interpreting credits wrong could create false flags.
 
+**Implemented (claude/engine-fixes):** negative amounts are accepted and netted into the total, and the invoice is held for review with that next step. Real ledgers record credits as negative rows (Montgomery County does). Test C2.
+
 ---
 
-## O3 · Messy amounts in uploaded CSVs · Open
+## O3 · Messy amounts in uploaded CSVs · Implemented, awaiting team OK
+
+**Implemented (claude/engine-fixes):** `parseMoney()` handles every row below exactly as proposed; `(250.00)` is negative and so is held under O2. Errors name the row. Test B5, A11.
 
 **Decide and test how each is handled:**
 
@@ -148,9 +154,25 @@ These come from fixed rules in code, not AI.
 
 ---
 
+## D8 · IDs are compared trimmed and case-insensitive · Implemented, awaiting team OK
+
+**Rule:** Payment, invoice and vendor IDs are compared after trimming spaces and ignoring capitals. `PAY-1 `, `pay-1` and `PAY-1` are one payment.
+
+**Why:** Without this, a re-imported export with a padded ID produced a **false overpayment of $12,631.84**, breaking the zero-false-flag target. Test B1, B2.
+
+---
+
+## D9 · Possible duplicate payment signal · Implemented, awaiting team OK
+
+**Rule:** When an invoice is overpaid and two or more different payment IDs paid it the same amount, the app adds a **possible duplicate payment** signal with the next step "Check whether one was voided, returned or refunded; if not, request a refund or credit." Equal split payments that add up to the bill raise nothing.
+
+**Why:** This is the pattern in real data: Montgomery County, MD paid Bound Tree Medical invoice 85957920 $212.42 on Oct 28 and again on Oct 29, 2025. Test C3, C4, E1.
+
+---
+
 ## Known limitations
 
-- **L1 · The same bill under two invoice IDs is not caught.** If a vendor's bill is entered twice under different invoice IDs and each copy is paid once, both look "Paid in full." Catching this needs a separate duplicate-invoice check (vendor + amount + date). Planned next step.
+- **L1 · Fixed on claude/engine-fixes.** Invoices with the same vendor and printed invoice number show **Possible duplicate bill**, with how many copies were paid and the excess if they are one bill. Catches all 15 starter duplicates. Requires the optional `invoiceNumber` field. Test B4, D1.
 - **L2 · Payments must be linked to invoices in the data.** The app does not guess allocations for payments that cover several invoices without a breakdown. Those are held for review.
 - **L3 · Saved reviews are in browser storage.** They are not access-controlled or tamper-proof like a production audit trail.
 - **L4 · USD only.**
@@ -164,7 +186,7 @@ These come from fixed rules in code, not AI.
 - **We report:** overpayments caught, overpayments missed, false flags, and cases held for review, with the test size.
 - **Answer keys** (including the starter pack's `validation/` folder) are kept out of the detection code and AI inputs and used only to check results afterward.
 - **Test set:** exact payment, split payment, overpaid by $250, overpaid by $0.01, same invoice number under two vendors, missing reference, identical repeat import, conflicting repeat, payment after cutoff, invalid amount.
-- **Current status:** 11 automated tests passing (as of Saturday morning).
+- **Current status:** 22 engine tests passing (`tests/review.test.js`), plus 18 starter tests. Full starter data: 40/40 overpayments found, 0 missed, 0 false flags; 15/15 duplicate bills flagged. Real data: Montgomery County, MD invoice 85957920 flagged (test E1).
 - **Usability check:** someone outside the team finds the overpayment, shows the evidence and saves a decision without help.
 
 ---
