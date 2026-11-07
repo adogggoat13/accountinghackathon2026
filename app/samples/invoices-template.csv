@@ -1,0 +1,6 @@
+invoice_id,vendor_id,vendor_name,invoice_number,amount,currency
+INV-A,V-100,Acme Office Supply,1042,10000.00,USD
+INV-B,V-200,Blue River Catering,1042,2400.00,USD
+INV-C,V-300,Cedar IT Services,77-9001,5150.00,USD
+INV-D,V-300,Cedar IT Services,77-9001,5150.00,USD
+INV-E,V-400,Delta Freight,D-55,980.00,USD
