@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00411
+Vendor: Summit Advisory 27
+Invoice: VEN-027-00411
+Invoice date: 2026-02-26
+Due: 2026-04-27
+Net USD: 16941.58
+Tax USD: 1058.85
+Total USD: 18000.43
+Purchase order: PO-000411
+These are synthetic workshop documents, not real transactions.

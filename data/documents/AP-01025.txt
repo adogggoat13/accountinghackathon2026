@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01025
+Vendor: Prairie Supply 17
+Invoice: VEN-017-01025
+Invoice date: 2026-09-08
+Due: 2026-10-08
+Net USD: 10310.66
+Tax USD: 644.42
+Total USD: 10955.08
+Purchase order: Not supplied
+These are synthetic workshop documents, not real transactions.

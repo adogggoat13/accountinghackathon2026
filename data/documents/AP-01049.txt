@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01049
+Vendor: Prairie Supply 41
+Invoice: VEN-041-01049
+Invoice date: 2026-03-07
+Due: 2026-04-06
+Net USD: 21453.05
+Tax USD: 1340.82
+Total USD: 22793.87
+Purchase order: PO-001049
+These are synthetic workshop documents, not real transactions.

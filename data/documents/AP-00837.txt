@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00837
+Vendor: Summit Printing 21
+Invoice: VEN-021-00837
+Invoice date: 2026-06-19
+Due: 2026-07-19
+Net USD: 9014.23
+Tax USD: 563.39
+Total USD: 9577.62
+Purchase order: PO-000837
+These are synthetic workshop documents, not real transactions.

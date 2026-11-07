@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00426
+Vendor: Oxford Software 42
+Invoice: VEN-042-00426
+Invoice date: 2026-05-12
+Due: 2026-06-26
+Net USD: 14238.21
+Tax USD: 889.89
+Total USD: 15128.10
+Purchase order: PO-000426
+These are synthetic workshop documents, not real transactions.

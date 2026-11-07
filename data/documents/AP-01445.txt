@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01445
+Vendor: Prairie Printing 05
+Invoice: VEN-005-01445
+Invoice date: 2026-06-01
+Due: 2026-07-01
+Net USD: 21156.60
+Tax USD: 1322.29
+Total USD: 22478.89
+Purchase order: PO-001445
+These are synthetic workshop documents, not real transactions.

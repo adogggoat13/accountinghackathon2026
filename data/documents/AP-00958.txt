@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00958
+Vendor: Cedar Catering 46
+Invoice: VEN-046-00958
+Invoice date: 2026-05-11
+Due: 2026-06-25
+Net USD: 11006.92
+Tax USD: 687.93
+Total USD: 11694.85
+Purchase order: PO-000958
+These are synthetic workshop documents, not real transactions.

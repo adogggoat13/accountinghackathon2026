@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01190
+Vendor: River Catering 38
+Invoice: VEN-038-01190
+Invoice date: 2026-08-06
+Due: 2026-09-20
+Net USD: 17345.73
+Tax USD: 1084.11
+Total USD: 18429.84
+Purchase order: PO-001190
+These are synthetic workshop documents, not real transactions.

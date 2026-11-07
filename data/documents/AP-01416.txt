@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01416
+Vendor: Oxford Analytics 24
+Invoice: VEN-024-01416
+Invoice date: 2026-05-08
+Due: 2026-05-23
+Net USD: 465.77
+Tax USD: 29.11
+Total USD: 494.88
+Purchase order: PO-001416
+These are synthetic workshop documents, not real transactions.

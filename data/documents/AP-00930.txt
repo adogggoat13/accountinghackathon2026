@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00930
+Vendor: Oxford Software 18
+Invoice: VEN-018-00930
+Invoice date: 2026-06-27
+Due: 2026-08-11
+Net USD: 10026.11
+Tax USD: 626.63
+Total USD: 10652.74
+Purchase order: PO-000930
+These are synthetic workshop documents, not real transactions.

@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01072
+Vendor: Cedar Analytics 16
+Invoice: VEN-016-01072
+Invoice date: 2026-06-02
+Due: 2026-06-17
+Net USD: 21381.02
+Tax USD: 1336.31
+Total USD: 22717.33
+Purchase order: PO-001072
+These are synthetic workshop documents, not real transactions.

@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00155
+Vendor: Prairie Advisory 11
+Invoice: VEN-011-00155
+Invoice date: 2026-07-29
+Due: 2026-09-27
+Net USD: 22859.30
+Tax USD: 1428.71
+Total USD: 24288.01
+Purchase order: PO-000155
+These are synthetic workshop documents, not real transactions.

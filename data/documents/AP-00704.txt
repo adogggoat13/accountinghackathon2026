@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00704
+Vendor: River Analytics 32
+Invoice: VEN-032-00704
+Invoice date: 2026-07-06
+Due: 2026-07-21
+Net USD: 11519.23
+Tax USD: 719.95
+Total USD: 12239.18
+Purchase order: PO-000704
+These are synthetic workshop documents, not real transactions.

@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00211
+Vendor: Maple Advisory 19
+Invoice: VEN-019-00211
+Invoice date: 2026-02-17
+Due: 2026-04-18
+Net USD: 12559.79
+Tax USD: 784.99
+Total USD: 13344.78
+Purchase order: PO-000211
+These are synthetic workshop documents, not real transactions.

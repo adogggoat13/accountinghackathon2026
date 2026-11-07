@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00117
+Vendor: Summit Printing 21
+Invoice: VEN-021-00117
+Invoice date: 2026-03-18
+Due: 2026-04-17
+Net USD: 16943.41
+Tax USD: 1058.96
+Total USD: 18002.37
+Purchase order: PO-000117
+These are synthetic workshop documents, not real transactions.

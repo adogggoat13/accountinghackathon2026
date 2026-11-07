@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00743
+Vendor: Prairie Facilities 23
+Invoice: VEN-023-00743
+Invoice date: 2026-01-12
+Due: 2026-03-13
+Net USD: 9517.07
+Tax USD: 594.82
+Total USD: 10111.89
+Purchase order: PO-000743
+These are synthetic workshop documents, not real transactions.

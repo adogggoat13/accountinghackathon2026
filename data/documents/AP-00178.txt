@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00178
+Vendor: Cedar Software 34
+Invoice: VEN-034-00178
+Invoice date: 2026-08-29
+Due: 2026-10-13
+Net USD: 21893.39
+Tax USD: 1368.34
+Total USD: 23261.73
+Purchase order: PO-000178
+These are synthetic workshop documents, not real transactions.

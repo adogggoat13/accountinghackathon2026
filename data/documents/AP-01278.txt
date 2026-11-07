@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01278
+Vendor: Oxford Catering 30
+Invoice: VEN-030-01278
+Invoice date: 2026-06-03
+Due: 2026-07-18
+Net USD: 13269.26
+Tax USD: 829.33
+Total USD: 14098.59
+Purchase order: PO-001278
+These are synthetic workshop documents, not real transactions.

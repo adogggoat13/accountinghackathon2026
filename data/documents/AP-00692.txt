@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00692
+Vendor: River Logistics 20
+Invoice: VEN-020-00692
+Invoice date: 2026-08-24
+Due: 2026-09-08
+Net USD: 23499.94
+Tax USD: 1468.75
+Total USD: 24968.69
+Purchase order: PO-000692
+These are synthetic workshop documents, not real transactions.

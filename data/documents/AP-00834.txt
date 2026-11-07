@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00834
+Vendor: Oxford Software 18
+Invoice: VEN-018-00834
+Invoice date: 2026-09-14
+Due: 2026-10-29
+Net USD: 8121.22
+Tax USD: 507.58
+Total USD: 8628.80
+Purchase order: PO-000834
+These are synthetic workshop documents, not real transactions.

@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00440
+Vendor: River Analytics 08
+Invoice: VEN-008-00440
+Invoice date: 2026-01-28
+Due: 2026-02-12
+Net USD: 14724.18
+Tax USD: 920.26
+Total USD: 15644.44
+Purchase order: PO-000440
+These are synthetic workshop documents, not real transactions.

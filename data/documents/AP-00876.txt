@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00876
+Vendor: Oxford Logistics 12
+Invoice: VEN-012-00876
+Invoice date: 2026-05-31
+Due: 2026-06-15
+Net USD: 13283.69
+Tax USD: 830.23
+Total USD: 14113.92
+Purchase order: PO-000876
+These are synthetic workshop documents, not real transactions.

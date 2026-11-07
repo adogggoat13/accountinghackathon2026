@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "code_and_dataset_tests": {
+    "passed": 18,
+    "failed": 0
+  },
+  "database_checks": {
+    "passed": 20,
+    "engine": "PGlite PostgreSQL with simulated Supabase Auth and Storage schemas"
+  },
+  "dataset_records": 3406,
+  "invoice_records": 1500,
+  "invoice_fields": 31,
+  "ap_findings": 357,
+  "challenge_prompts": 25,
+  "mvp_options": 75,
+  "live_services_verified": false,
+  "limitations": [
+    "No hosted Supabase instance was created.",
+    "Upstream service wrappers tested with mocks, not paid/live credentials.",
+    "No UI, LLM provider or reference application is included."
+  ]
+}

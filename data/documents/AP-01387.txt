@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01387
+Vendor: Maple Advisory 43
+Invoice: VEN-043-01387
+Invoice date: 2026-04-11
+Due: 2026-06-10
+Net USD: 8823.32
+Tax USD: 551.46
+Total USD: 9374.78
+Purchase order: PO-001387
+These are synthetic workshop documents, not real transactions.

@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01258
+Vendor: Cedar Software 10
+Invoice: VEN-010-01258
+Invoice date: 2026-08-18
+Due: 2026-10-02
+Net USD: 18711.12
+Tax USD: 1169.45
+Total USD: 19880.57
+Purchase order: PO-001258
+These are synthetic workshop documents, not real transactions.

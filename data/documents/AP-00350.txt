@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00350
+Vendor: River Catering 14
+Invoice: VEN-014-00350
+Invoice date: 2026-01-05
+Due: 2026-02-19
+Net USD: 15493.45
+Tax USD: 968.34
+Total USD: 16461.79
+Purchase order: PO-000350
+These are synthetic workshop documents, not real transactions.

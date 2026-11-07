@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01055
+Vendor: Prairie Facilities 47
+Invoice: VEN-047-01055
+Invoice date: 2026-06-19
+Due: 2026-08-18
+Net USD: 23608.87
+Tax USD: 1475.55
+Total USD: 25084.42
+Purchase order: PO-001055
+These are synthetic workshop documents, not real transactions.

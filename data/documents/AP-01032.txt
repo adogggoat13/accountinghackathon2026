@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01032
+Vendor: Oxford Analytics 24
+Invoice: VEN-024-01032
+Invoice date: 2026-06-28
+Due: 2026-07-13
+Net USD: 14475.91
+Tax USD: 904.74
+Total USD: 15380.65
+Purchase order: PO-001032
+These are synthetic workshop documents, not real transactions.

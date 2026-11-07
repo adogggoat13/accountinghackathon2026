@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01063
+Vendor: Maple Facilities 07
+Invoice: VEN-007-01063
+Invoice date: 2026-09-28
+Due: 2026-11-27
+Net USD: 11292.85
+Tax USD: 705.80
+Total USD: 11998.65
+Purchase order: PO-001063
+These are synthetic workshop documents, not real transactions.

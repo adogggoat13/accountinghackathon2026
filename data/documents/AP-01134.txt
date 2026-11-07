@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01134
+Vendor: Oxford Catering 30
+Invoice: VEN-030-01134
+Invoice date: 2026-07-10
+Due: 2026-08-24
+Net USD: 8952.86
+Tax USD: 559.55
+Total USD: 9512.41
+Purchase order: PO-001134
+These are synthetic workshop documents, not real transactions.

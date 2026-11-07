@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00001
+Vendor: Maple Supply 01
+Invoice: VEN-001-00001
+Invoice date: 2026-01-25
+Due: 2026-02-24
+Net USD: 3725.30
+Tax USD: 232.83
+Total USD: 3958.13
+Purchase order: PO-000001
+These are synthetic workshop documents, not real transactions.

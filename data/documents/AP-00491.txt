@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00491
+Vendor: Prairie Advisory 11
+Invoice: VEN-011-00491
+Invoice date: 2026-05-31
+Due: 2026-07-30
+Net USD: 15876.24
+Tax USD: 992.27
+Total USD: 16868.51
+Purchase order: PO-000491
+These are synthetic workshop documents, not real transactions.

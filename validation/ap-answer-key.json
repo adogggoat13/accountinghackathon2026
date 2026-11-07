@@ -1,0 +1,1792 @@
+{
+  "asOf": "2026-09-30",
+  "grossInvoiceTotal": "20363230.94",
+  "recordedPaidTotal": "17912962.76",
+  "findings": [
+    {
+      "record_id": "AP-00017",
+      "rule": "overdue_balance",
+      "source_row": 18
+    },
+    {
+      "record_id": "AP-00022",
+      "rule": "overdue_balance",
+      "source_row": 23
+    },
+    {
+      "record_id": "AP-00029",
+      "rule": "missing_approval",
+      "source_row": 30
+    },
+    {
+      "record_id": "AP-00033",
+      "rule": "overdue_balance",
+      "source_row": 34
+    },
+    {
+      "record_id": "AP-00034",
+      "rule": "overdue_balance",
+      "source_row": 35
+    },
+    {
+      "record_id": "AP-00037",
+      "rule": "overpayment",
+      "source_row": 38
+    },
+    {
+      "record_id": "AP-00041",
+      "rule": "missing_po",
+      "source_row": 42
+    },
+    {
+      "record_id": "AP-00044",
+      "rule": "overdue_balance",
+      "source_row": 45
+    },
+    {
+      "record_id": "AP-00051",
+      "rule": "overdue_balance",
+      "source_row": 52
+    },
+    {
+      "record_id": "AP-00053",
+      "rule": "missing_receipt",
+      "source_row": 54
+    },
+    {
+      "record_id": "AP-00058",
+      "rule": "missing_approval",
+      "source_row": 59
+    },
+    {
+      "record_id": "AP-00066",
+      "rule": "overdue_balance",
+      "source_row": 67
+    },
+    {
+      "record_id": "AP-00074",
+      "rule": "overpayment",
+      "source_row": 75
+    },
+    {
+      "record_id": "AP-00077",
+      "rule": "overdue_balance",
+      "source_row": 78
+    },
+    {
+      "record_id": "AP-00082",
+      "rule": "missing_po",
+      "source_row": 83
+    },
+    {
+      "record_id": "AP-00085",
+      "rule": "overdue_balance",
+      "source_row": 86
+    },
+    {
+      "record_id": "AP-00087",
+      "rule": "missing_approval",
+      "source_row": 88
+    },
+    {
+      "record_id": "AP-00088",
+      "rule": "overdue_balance",
+      "source_row": 89
+    },
+    {
+      "record_id": "AP-00097",
+      "rule": "duplicate_invoice",
+      "source_row": 98
+    },
+    {
+      "record_id": "AP-00097",
+      "rule": "overdue_balance",
+      "source_row": 98
+    },
+    {
+      "record_id": "AP-00099",
+      "rule": "overdue_balance",
+      "source_row": 100
+    },
+    {
+      "record_id": "AP-00102",
+      "rule": "overdue_balance",
+      "source_row": 103
+    },
+    {
+      "record_id": "AP-00106",
+      "rule": "missing_receipt",
+      "source_row": 107
+    },
+    {
+      "record_id": "AP-00110",
+      "rule": "overdue_balance",
+      "source_row": 111
+    },
+    {
+      "record_id": "AP-00111",
+      "rule": "overpayment",
+      "source_row": 112
+    },
+    {
+      "record_id": "AP-00116",
+      "rule": "missing_approval",
+      "source_row": 117
+    },
+    {
+      "record_id": "AP-00119",
+      "rule": "overdue_balance",
+      "source_row": 120
+    },
+    {
+      "record_id": "AP-00121",
+      "rule": "overdue_balance",
+      "source_row": 122
+    },
+    {
+      "record_id": "AP-00123",
+      "rule": "missing_po",
+      "source_row": 124
+    },
+    {
+      "record_id": "AP-00132",
+      "rule": "overdue_balance",
+      "source_row": 133
+    },
+    {
+      "record_id": "AP-00136",
+      "rule": "overdue_balance",
+      "source_row": 137
+    },
+    {
+      "record_id": "AP-00143",
+      "rule": "overdue_balance",
+      "source_row": 144
+    },
+    {
+      "record_id": "AP-00145",
+      "rule": "missing_approval",
+      "source_row": 146
+    },
+    {
+      "record_id": "AP-00148",
+      "rule": "overpayment",
+      "source_row": 149
+    },
+    {
+      "record_id": "AP-00153",
+      "rule": "overdue_balance",
+      "source_row": 154
+    },
+    {
+      "record_id": "AP-00154",
+      "rule": "overdue_balance",
+      "source_row": 155
+    },
+    {
+      "record_id": "AP-00159",
+      "rule": "missing_receipt",
+      "source_row": 160
+    },
+    {
+      "record_id": "AP-00164",
+      "rule": "missing_po",
+      "source_row": 165
+    },
+    {
+      "record_id": "AP-00165",
+      "rule": "overdue_balance",
+      "source_row": 166
+    },
+    {
+      "record_id": "AP-00170",
+      "rule": "overdue_balance",
+      "source_row": 171
+    },
+    {
+      "record_id": "AP-00174",
+      "rule": "missing_approval",
+      "source_row": 175
+    },
+    {
+      "record_id": "AP-00176",
+      "rule": "overdue_balance",
+      "source_row": 177
+    },
+    {
+      "record_id": "AP-00185",
+      "rule": "overpayment",
+      "source_row": 186
+    },
+    {
+      "record_id": "AP-00187",
+      "rule": "overdue_balance",
+      "source_row": 188
+    },
+    {
+      "record_id": "AP-00194",
+      "rule": "duplicate_invoice",
+      "source_row": 195
+    },
+    {
+      "record_id": "AP-00203",
+      "rule": "missing_approval",
+      "source_row": 204
+    },
+    {
+      "record_id": "AP-00204",
+      "rule": "overdue_balance",
+      "source_row": 205
+    },
+    {
+      "record_id": "AP-00205",
+      "rule": "missing_po",
+      "source_row": 206
+    },
+    {
+      "record_id": "AP-00212",
+      "rule": "missing_receipt",
+      "source_row": 213
+    },
+    {
+      "record_id": "AP-00221",
+      "rule": "overdue_balance",
+      "source_row": 222
+    },
+    {
+      "record_id": "AP-00222",
+      "rule": "overpayment",
+      "source_row": 223
+    },
+    {
+      "record_id": "AP-00231",
+      "rule": "overdue_balance",
+      "source_row": 232
+    },
+    {
+      "record_id": "AP-00232",
+      "rule": "missing_approval",
+      "source_row": 233
+    },
+    {
+      "record_id": "AP-00238",
+      "rule": "overdue_balance",
+      "source_row": 239
+    },
+    {
+      "record_id": "AP-00242",
+      "rule": "overdue_balance",
+      "source_row": 243
+    },
+    {
+      "record_id": "AP-00246",
+      "rule": "missing_po",
+      "source_row": 247
+    },
+    {
+      "record_id": "AP-00253",
+      "rule": "overdue_balance",
+      "source_row": 254
+    },
+    {
+      "record_id": "AP-00255",
+      "rule": "overdue_balance",
+      "source_row": 256
+    },
+    {
+      "record_id": "AP-00259",
+      "rule": "overpayment",
+      "source_row": 260
+    },
+    {
+      "record_id": "AP-00261",
+      "rule": "missing_approval",
+      "source_row": 262
+    },
+    {
+      "record_id": "AP-00264",
+      "rule": "overdue_balance",
+      "source_row": 265
+    },
+    {
+      "record_id": "AP-00265",
+      "rule": "missing_receipt",
+      "source_row": 266
+    },
+    {
+      "record_id": "AP-00286",
+      "rule": "overdue_balance",
+      "source_row": 287
+    },
+    {
+      "record_id": "AP-00287",
+      "rule": "missing_po",
+      "source_row": 288
+    },
+    {
+      "record_id": "AP-00289",
+      "rule": "overdue_balance",
+      "source_row": 290
+    },
+    {
+      "record_id": "AP-00290",
+      "rule": "missing_approval",
+      "source_row": 291
+    },
+    {
+      "record_id": "AP-00291",
+      "rule": "duplicate_invoice",
+      "source_row": 292
+    },
+    {
+      "record_id": "AP-00296",
+      "rule": "overpayment",
+      "source_row": 297
+    },
+    {
+      "record_id": "AP-00297",
+      "rule": "overdue_balance",
+      "source_row": 298
+    },
+    {
+      "record_id": "AP-00306",
+      "rule": "overdue_balance",
+      "source_row": 307
+    },
+    {
+      "record_id": "AP-00308",
+      "rule": "overdue_balance",
+      "source_row": 309
+    },
+    {
+      "record_id": "AP-00318",
+      "rule": "missing_receipt",
+      "source_row": 319
+    },
+    {
+      "record_id": "AP-00319",
+      "rule": "missing_approval",
+      "source_row": 320
+    },
+    {
+      "record_id": "AP-00319",
+      "rule": "overdue_balance",
+      "source_row": 320
+    },
+    {
+      "record_id": "AP-00328",
+      "rule": "missing_po",
+      "source_row": 329
+    },
+    {
+      "record_id": "AP-00330",
+      "rule": "overdue_balance",
+      "source_row": 331
+    },
+    {
+      "record_id": "AP-00333",
+      "rule": "overpayment",
+      "source_row": 334
+    },
+    {
+      "record_id": "AP-00340",
+      "rule": "overdue_balance",
+      "source_row": 341
+    },
+    {
+      "record_id": "AP-00348",
+      "rule": "missing_approval",
+      "source_row": 349
+    },
+    {
+      "record_id": "AP-00352",
+      "rule": "overdue_balance",
+      "source_row": 353
+    },
+    {
+      "record_id": "AP-00357",
+      "rule": "overdue_balance",
+      "source_row": 358
+    },
+    {
+      "record_id": "AP-00369",
+      "rule": "missing_po",
+      "source_row": 370
+    },
+    {
+      "record_id": "AP-00370",
+      "rule": "overpayment",
+      "source_row": 371
+    },
+    {
+      "record_id": "AP-00371",
+      "rule": "missing_receipt",
+      "source_row": 372
+    },
+    {
+      "record_id": "AP-00374",
+      "rule": "overdue_balance",
+      "source_row": 375
+    },
+    {
+      "record_id": "AP-00377",
+      "rule": "missing_approval",
+      "source_row": 378
+    },
+    {
+      "record_id": "AP-00385",
+      "rule": "overdue_balance",
+      "source_row": 386
+    },
+    {
+      "record_id": "AP-00388",
+      "rule": "duplicate_invoice",
+      "source_row": 389
+    },
+    {
+      "record_id": "AP-00388",
+      "rule": "overdue_balance",
+      "source_row": 389
+    },
+    {
+      "record_id": "AP-00391",
+      "rule": "overdue_balance",
+      "source_row": 392
+    },
+    {
+      "record_id": "AP-00396",
+      "rule": "overdue_balance",
+      "source_row": 397
+    },
+    {
+      "record_id": "AP-00406",
+      "rule": "missing_approval",
+      "source_row": 407
+    },
+    {
+      "record_id": "AP-00407",
+      "rule": "overpayment",
+      "source_row": 408
+    },
+    {
+      "record_id": "AP-00408",
+      "rule": "overdue_balance",
+      "source_row": 409
+    },
+    {
+      "record_id": "AP-00410",
+      "rule": "missing_po",
+      "source_row": 411
+    },
+    {
+      "record_id": "AP-00418",
+      "rule": "overdue_balance",
+      "source_row": 419
+    },
+    {
+      "record_id": "AP-00424",
+      "rule": "missing_receipt",
+      "source_row": 425
+    },
+    {
+      "record_id": "AP-00425",
+      "rule": "overdue_balance",
+      "source_row": 426
+    },
+    {
+      "record_id": "AP-00429",
+      "rule": "overdue_balance",
+      "source_row": 430
+    },
+    {
+      "record_id": "AP-00435",
+      "rule": "missing_approval",
+      "source_row": 436
+    },
+    {
+      "record_id": "AP-00440",
+      "rule": "overdue_balance",
+      "source_row": 441
+    },
+    {
+      "record_id": "AP-00442",
+      "rule": "overdue_balance",
+      "source_row": 443
+    },
+    {
+      "record_id": "AP-00444",
+      "rule": "overpayment",
+      "source_row": 445
+    },
+    {
+      "record_id": "AP-00451",
+      "rule": "missing_po",
+      "source_row": 452
+    },
+    {
+      "record_id": "AP-00459",
+      "rule": "overdue_balance",
+      "source_row": 460
+    },
+    {
+      "record_id": "AP-00462",
+      "rule": "overdue_balance",
+      "source_row": 463
+    },
+    {
+      "record_id": "AP-00464",
+      "rule": "missing_approval",
+      "source_row": 465
+    },
+    {
+      "record_id": "AP-00473",
+      "rule": "overdue_balance",
+      "source_row": 474
+    },
+    {
+      "record_id": "AP-00477",
+      "rule": "missing_receipt",
+      "source_row": 478
+    },
+    {
+      "record_id": "AP-00481",
+      "rule": "overpayment",
+      "source_row": 482
+    },
+    {
+      "record_id": "AP-00485",
+      "rule": "duplicate_invoice",
+      "source_row": 486
+    },
+    {
+      "record_id": "AP-00485",
+      "rule": "overdue_balance",
+      "source_row": 486
+    },
+    {
+      "record_id": "AP-00492",
+      "rule": "missing_po",
+      "source_row": 493
+    },
+    {
+      "record_id": "AP-00493",
+      "rule": "missing_approval",
+      "source_row": 494
+    },
+    {
+      "record_id": "AP-00493",
+      "rule": "overdue_balance",
+      "source_row": 494
+    },
+    {
+      "record_id": "AP-00510",
+      "rule": "overdue_balance",
+      "source_row": 511
+    },
+    {
+      "record_id": "AP-00518",
+      "rule": "overpayment",
+      "source_row": 519
+    },
+    {
+      "record_id": "AP-00522",
+      "rule": "missing_approval",
+      "source_row": 523
+    },
+    {
+      "record_id": "AP-00528",
+      "rule": "overdue_balance",
+      "source_row": 529
+    },
+    {
+      "record_id": "AP-00530",
+      "rule": "missing_receipt",
+      "source_row": 531
+    },
+    {
+      "record_id": "AP-00533",
+      "rule": "missing_po",
+      "source_row": 534
+    },
+    {
+      "record_id": "AP-00539",
+      "rule": "overdue_balance",
+      "source_row": 540
+    },
+    {
+      "record_id": "AP-00544",
+      "rule": "overdue_balance",
+      "source_row": 545
+    },
+    {
+      "record_id": "AP-00550",
+      "rule": "overdue_balance",
+      "source_row": 551
+    },
+    {
+      "record_id": "AP-00551",
+      "rule": "missing_approval",
+      "source_row": 552
+    },
+    {
+      "record_id": "AP-00555",
+      "rule": "overpayment",
+      "source_row": 556
+    },
+    {
+      "record_id": "AP-00561",
+      "rule": "overdue_balance",
+      "source_row": 562
+    },
+    {
+      "record_id": "AP-00572",
+      "rule": "overdue_balance",
+      "source_row": 573
+    },
+    {
+      "record_id": "AP-00574",
+      "rule": "missing_po",
+      "source_row": 575
+    },
+    {
+      "record_id": "AP-00578",
+      "rule": "overdue_balance",
+      "source_row": 579
+    },
+    {
+      "record_id": "AP-00580",
+      "rule": "missing_approval",
+      "source_row": 581
+    },
+    {
+      "record_id": "AP-00582",
+      "rule": "duplicate_invoice",
+      "source_row": 583
+    },
+    {
+      "record_id": "AP-00582",
+      "rule": "overdue_balance",
+      "source_row": 583
+    },
+    {
+      "record_id": "AP-00583",
+      "rule": "missing_receipt",
+      "source_row": 584
+    },
+    {
+      "record_id": "AP-00583",
+      "rule": "overdue_balance",
+      "source_row": 584
+    },
+    {
+      "record_id": "AP-00592",
+      "rule": "overpayment",
+      "source_row": 593
+    },
+    {
+      "record_id": "AP-00594",
+      "rule": "overdue_balance",
+      "source_row": 595
+    },
+    {
+      "record_id": "AP-00595",
+      "rule": "overdue_balance",
+      "source_row": 596
+    },
+    {
+      "record_id": "AP-00605",
+      "rule": "overdue_balance",
+      "source_row": 606
+    },
+    {
+      "record_id": "AP-00609",
+      "rule": "missing_approval",
+      "source_row": 610
+    },
+    {
+      "record_id": "AP-00612",
+      "rule": "overdue_balance",
+      "source_row": 613
+    },
+    {
+      "record_id": "AP-00615",
+      "rule": "missing_po",
+      "source_row": 616
+    },
+    {
+      "record_id": "AP-00616",
+      "rule": "overdue_balance",
+      "source_row": 617
+    },
+    {
+      "record_id": "AP-00627",
+      "rule": "overdue_balance",
+      "source_row": 628
+    },
+    {
+      "record_id": "AP-00629",
+      "rule": "overpayment",
+      "source_row": 630
+    },
+    {
+      "record_id": "AP-00636",
+      "rule": "missing_receipt",
+      "source_row": 637
+    },
+    {
+      "record_id": "AP-00638",
+      "rule": "missing_approval",
+      "source_row": 639
+    },
+    {
+      "record_id": "AP-00638",
+      "rule": "overdue_balance",
+      "source_row": 639
+    },
+    {
+      "record_id": "AP-00646",
+      "rule": "overdue_balance",
+      "source_row": 647
+    },
+    {
+      "record_id": "AP-00656",
+      "rule": "missing_po",
+      "source_row": 657
+    },
+    {
+      "record_id": "AP-00663",
+      "rule": "overdue_balance",
+      "source_row": 664
+    },
+    {
+      "record_id": "AP-00666",
+      "rule": "overpayment",
+      "source_row": 667
+    },
+    {
+      "record_id": "AP-00667",
+      "rule": "missing_approval",
+      "source_row": 668
+    },
+    {
+      "record_id": "AP-00679",
+      "rule": "duplicate_invoice",
+      "source_row": 680
+    },
+    {
+      "record_id": "AP-00680",
+      "rule": "overdue_balance",
+      "source_row": 681
+    },
+    {
+      "record_id": "AP-00682",
+      "rule": "overdue_balance",
+      "source_row": 683
+    },
+    {
+      "record_id": "AP-00689",
+      "rule": "missing_receipt",
+      "source_row": 690
+    },
+    {
+      "record_id": "AP-00693",
+      "rule": "overdue_balance",
+      "source_row": 694
+    },
+    {
+      "record_id": "AP-00696",
+      "rule": "missing_approval",
+      "source_row": 697
+    },
+    {
+      "record_id": "AP-00697",
+      "rule": "missing_po",
+      "source_row": 698
+    },
+    {
+      "record_id": "AP-00697",
+      "rule": "overdue_balance",
+      "source_row": 698
+    },
+    {
+      "record_id": "AP-00703",
+      "rule": "overpayment",
+      "source_row": 704
+    },
+    {
+      "record_id": "AP-00704",
+      "rule": "overdue_balance",
+      "source_row": 705
+    },
+    {
+      "record_id": "AP-00714",
+      "rule": "overdue_balance",
+      "source_row": 715
+    },
+    {
+      "record_id": "AP-00715",
+      "rule": "overdue_balance",
+      "source_row": 716
+    },
+    {
+      "record_id": "AP-00725",
+      "rule": "missing_approval",
+      "source_row": 726
+    },
+    {
+      "record_id": "AP-00726",
+      "rule": "overdue_balance",
+      "source_row": 727
+    },
+    {
+      "record_id": "AP-00731",
+      "rule": "overdue_balance",
+      "source_row": 732
+    },
+    {
+      "record_id": "AP-00737",
+      "rule": "overdue_balance",
+      "source_row": 738
+    },
+    {
+      "record_id": "AP-00738",
+      "rule": "missing_po",
+      "source_row": 739
+    },
+    {
+      "record_id": "AP-00740",
+      "rule": "overpayment",
+      "source_row": 741
+    },
+    {
+      "record_id": "AP-00742",
+      "rule": "missing_receipt",
+      "source_row": 743
+    },
+    {
+      "record_id": "AP-00748",
+      "rule": "overdue_balance",
+      "source_row": 749
+    },
+    {
+      "record_id": "AP-00754",
+      "rule": "missing_approval",
+      "source_row": 755
+    },
+    {
+      "record_id": "AP-00759",
+      "rule": "overdue_balance",
+      "source_row": 760
+    },
+    {
+      "record_id": "AP-00765",
+      "rule": "overdue_balance",
+      "source_row": 766
+    },
+    {
+      "record_id": "AP-00776",
+      "rule": "duplicate_invoice",
+      "source_row": 777
+    },
+    {
+      "record_id": "AP-00776",
+      "rule": "overdue_balance",
+      "source_row": 777
+    },
+    {
+      "record_id": "AP-00777",
+      "rule": "overpayment",
+      "source_row": 778
+    },
+    {
+      "record_id": "AP-00779",
+      "rule": "missing_po",
+      "source_row": 780
+    },
+    {
+      "record_id": "AP-00781",
+      "rule": "overdue_balance",
+      "source_row": 782
+    },
+    {
+      "record_id": "AP-00782",
+      "rule": "overdue_balance",
+      "source_row": 783
+    },
+    {
+      "record_id": "AP-00783",
+      "rule": "missing_approval",
+      "source_row": 784
+    },
+    {
+      "record_id": "AP-00795",
+      "rule": "missing_receipt",
+      "source_row": 796
+    },
+    {
+      "record_id": "AP-00799",
+      "rule": "overdue_balance",
+      "source_row": 800
+    },
+    {
+      "record_id": "AP-00812",
+      "rule": "missing_approval",
+      "source_row": 813
+    },
+    {
+      "record_id": "AP-00814",
+      "rule": "overpayment",
+      "source_row": 815
+    },
+    {
+      "record_id": "AP-00816",
+      "rule": "overdue_balance",
+      "source_row": 817
+    },
+    {
+      "record_id": "AP-00820",
+      "rule": "missing_po",
+      "source_row": 821
+    },
+    {
+      "record_id": "AP-00825",
+      "rule": "overdue_balance",
+      "source_row": 826
+    },
+    {
+      "record_id": "AP-00833",
+      "rule": "overdue_balance",
+      "source_row": 834
+    },
+    {
+      "record_id": "AP-00836",
+      "rule": "overdue_balance",
+      "source_row": 837
+    },
+    {
+      "record_id": "AP-00841",
+      "rule": "missing_approval",
+      "source_row": 842
+    },
+    {
+      "record_id": "AP-00847",
+      "rule": "overdue_balance",
+      "source_row": 848
+    },
+    {
+      "record_id": "AP-00848",
+      "rule": "missing_receipt",
+      "source_row": 849
+    },
+    {
+      "record_id": "AP-00850",
+      "rule": "overdue_balance",
+      "source_row": 851
+    },
+    {
+      "record_id": "AP-00851",
+      "rule": "overpayment",
+      "source_row": 852
+    },
+    {
+      "record_id": "AP-00858",
+      "rule": "overdue_balance",
+      "source_row": 859
+    },
+    {
+      "record_id": "AP-00861",
+      "rule": "missing_po",
+      "source_row": 862
+    },
+    {
+      "record_id": "AP-00867",
+      "rule": "overdue_balance",
+      "source_row": 868
+    },
+    {
+      "record_id": "AP-00869",
+      "rule": "overdue_balance",
+      "source_row": 870
+    },
+    {
+      "record_id": "AP-00870",
+      "rule": "missing_approval",
+      "source_row": 871
+    },
+    {
+      "record_id": "AP-00873",
+      "rule": "duplicate_invoice",
+      "source_row": 874
+    },
+    {
+      "record_id": "AP-00873",
+      "rule": "overdue_balance",
+      "source_row": 874
+    },
+    {
+      "record_id": "AP-00880",
+      "rule": "overdue_balance",
+      "source_row": 881
+    },
+    {
+      "record_id": "AP-00884",
+      "rule": "overdue_balance",
+      "source_row": 885
+    },
+    {
+      "record_id": "AP-00888",
+      "rule": "overpayment",
+      "source_row": 889
+    },
+    {
+      "record_id": "AP-00891",
+      "rule": "overdue_balance",
+      "source_row": 892
+    },
+    {
+      "record_id": "AP-00899",
+      "rule": "missing_approval",
+      "source_row": 900
+    },
+    {
+      "record_id": "AP-00901",
+      "rule": "missing_receipt",
+      "source_row": 902
+    },
+    {
+      "record_id": "AP-00901",
+      "rule": "overdue_balance",
+      "source_row": 902
+    },
+    {
+      "record_id": "AP-00902",
+      "rule": "missing_po",
+      "source_row": 903
+    },
+    {
+      "record_id": "AP-00902",
+      "rule": "overdue_balance",
+      "source_row": 903
+    },
+    {
+      "record_id": "AP-00913",
+      "rule": "overdue_balance",
+      "source_row": 914
+    },
+    {
+      "record_id": "AP-00918",
+      "rule": "overdue_balance",
+      "source_row": 919
+    },
+    {
+      "record_id": "AP-00924",
+      "rule": "overdue_balance",
+      "source_row": 925
+    },
+    {
+      "record_id": "AP-00925",
+      "rule": "overpayment",
+      "source_row": 926
+    },
+    {
+      "record_id": "AP-00928",
+      "rule": "missing_approval",
+      "source_row": 929
+    },
+    {
+      "record_id": "AP-00935",
+      "rule": "overdue_balance",
+      "source_row": 936
+    },
+    {
+      "record_id": "AP-00943",
+      "rule": "missing_po",
+      "source_row": 944
+    },
+    {
+      "record_id": "AP-00946",
+      "rule": "overdue_balance",
+      "source_row": 947
+    },
+    {
+      "record_id": "AP-00952",
+      "rule": "overdue_balance",
+      "source_row": 953
+    },
+    {
+      "record_id": "AP-00954",
+      "rule": "missing_receipt",
+      "source_row": 955
+    },
+    {
+      "record_id": "AP-00957",
+      "rule": "missing_approval",
+      "source_row": 958
+    },
+    {
+      "record_id": "AP-00957",
+      "rule": "overdue_balance",
+      "source_row": 958
+    },
+    {
+      "record_id": "AP-00962",
+      "rule": "overpayment",
+      "source_row": 963
+    },
+    {
+      "record_id": "AP-00968",
+      "rule": "overdue_balance",
+      "source_row": 969
+    },
+    {
+      "record_id": "AP-00969",
+      "rule": "overdue_balance",
+      "source_row": 970
+    },
+    {
+      "record_id": "AP-00970",
+      "rule": "duplicate_invoice",
+      "source_row": 971
+    },
+    {
+      "record_id": "AP-00970",
+      "rule": "overdue_balance",
+      "source_row": 971
+    },
+    {
+      "record_id": "AP-00979",
+      "rule": "overdue_balance",
+      "source_row": 980
+    },
+    {
+      "record_id": "AP-00984",
+      "rule": "missing_po",
+      "source_row": 985
+    },
+    {
+      "record_id": "AP-00986",
+      "rule": "missing_approval",
+      "source_row": 987
+    },
+    {
+      "record_id": "AP-00986",
+      "rule": "overdue_balance",
+      "source_row": 987
+    },
+    {
+      "record_id": "AP-00990",
+      "rule": "overdue_balance",
+      "source_row": 991
+    },
+    {
+      "record_id": "AP-00999",
+      "rule": "overpayment",
+      "source_row": 1000
+    },
+    {
+      "record_id": "AP-01001",
+      "rule": "overdue_balance",
+      "source_row": 1002
+    },
+    {
+      "record_id": "AP-01007",
+      "rule": "missing_receipt",
+      "source_row": 1008
+    },
+    {
+      "record_id": "AP-01012",
+      "rule": "overdue_balance",
+      "source_row": 1013
+    },
+    {
+      "record_id": "AP-01015",
+      "rule": "missing_approval",
+      "source_row": 1016
+    },
+    {
+      "record_id": "AP-01020",
+      "rule": "overdue_balance",
+      "source_row": 1021
+    },
+    {
+      "record_id": "AP-01023",
+      "rule": "overdue_balance",
+      "source_row": 1024
+    },
+    {
+      "record_id": "AP-01025",
+      "rule": "missing_po",
+      "source_row": 1026
+    },
+    {
+      "record_id": "AP-01034",
+      "rule": "overdue_balance",
+      "source_row": 1035
+    },
+    {
+      "record_id": "AP-01036",
+      "rule": "overpayment",
+      "source_row": 1037
+    },
+    {
+      "record_id": "AP-01037",
+      "rule": "overdue_balance",
+      "source_row": 1038
+    },
+    {
+      "record_id": "AP-01044",
+      "rule": "missing_approval",
+      "source_row": 1045
+    },
+    {
+      "record_id": "AP-01054",
+      "rule": "overdue_balance",
+      "source_row": 1055
+    },
+    {
+      "record_id": "AP-01056",
+      "rule": "overdue_balance",
+      "source_row": 1057
+    },
+    {
+      "record_id": "AP-01060",
+      "rule": "missing_receipt",
+      "source_row": 1061
+    },
+    {
+      "record_id": "AP-01066",
+      "rule": "missing_po",
+      "source_row": 1067
+    },
+    {
+      "record_id": "AP-01067",
+      "rule": "duplicate_invoice",
+      "source_row": 1068
+    },
+    {
+      "record_id": "AP-01067",
+      "rule": "overdue_balance",
+      "source_row": 1068
+    },
+    {
+      "record_id": "AP-01071",
+      "rule": "overdue_balance",
+      "source_row": 1072
+    },
+    {
+      "record_id": "AP-01073",
+      "rule": "overpayment",
+      "source_row": 1074
+    },
+    {
+      "record_id": "AP-01073",
+      "rule": "missing_approval",
+      "source_row": 1074
+    },
+    {
+      "record_id": "AP-01078",
+      "rule": "overdue_balance",
+      "source_row": 1079
+    },
+    {
+      "record_id": "AP-01088",
+      "rule": "overdue_balance",
+      "source_row": 1089
+    },
+    {
+      "record_id": "AP-01089",
+      "rule": "overdue_balance",
+      "source_row": 1090
+    },
+    {
+      "record_id": "AP-01100",
+      "rule": "overdue_balance",
+      "source_row": 1101
+    },
+    {
+      "record_id": "AP-01102",
+      "rule": "missing_approval",
+      "source_row": 1103
+    },
+    {
+      "record_id": "AP-01105",
+      "rule": "overdue_balance",
+      "source_row": 1106
+    },
+    {
+      "record_id": "AP-01107",
+      "rule": "missing_po",
+      "source_row": 1108
+    },
+    {
+      "record_id": "AP-01110",
+      "rule": "overpayment",
+      "source_row": 1111
+    },
+    {
+      "record_id": "AP-01111",
+      "rule": "overdue_balance",
+      "source_row": 1112
+    },
+    {
+      "record_id": "AP-01113",
+      "rule": "missing_receipt",
+      "source_row": 1114
+    },
+    {
+      "record_id": "AP-01122",
+      "rule": "overdue_balance",
+      "source_row": 1123
+    },
+    {
+      "record_id": "AP-01131",
+      "rule": "missing_approval",
+      "source_row": 1132
+    },
+    {
+      "record_id": "AP-01133",
+      "rule": "overdue_balance",
+      "source_row": 1134
+    },
+    {
+      "record_id": "AP-01139",
+      "rule": "overdue_balance",
+      "source_row": 1140
+    },
+    {
+      "record_id": "AP-01144",
+      "rule": "overdue_balance",
+      "source_row": 1145
+    },
+    {
+      "record_id": "AP-01147",
+      "rule": "overpayment",
+      "source_row": 1148
+    },
+    {
+      "record_id": "AP-01148",
+      "rule": "missing_po",
+      "source_row": 1149
+    },
+    {
+      "record_id": "AP-01155",
+      "rule": "overdue_balance",
+      "source_row": 1156
+    },
+    {
+      "record_id": "AP-01156",
+      "rule": "overdue_balance",
+      "source_row": 1157
+    },
+    {
+      "record_id": "AP-01160",
+      "rule": "missing_approval",
+      "source_row": 1161
+    },
+    {
+      "record_id": "AP-01164",
+      "rule": "duplicate_invoice",
+      "source_row": 1165
+    },
+    {
+      "record_id": "AP-01164",
+      "rule": "overdue_balance",
+      "source_row": 1165
+    },
+    {
+      "record_id": "AP-01166",
+      "rule": "missing_receipt",
+      "source_row": 1167
+    },
+    {
+      "record_id": "AP-01166",
+      "rule": "overdue_balance",
+      "source_row": 1167
+    },
+    {
+      "record_id": "AP-01173",
+      "rule": "overdue_balance",
+      "source_row": 1174
+    },
+    {
+      "record_id": "AP-01177",
+      "rule": "overdue_balance",
+      "source_row": 1178
+    },
+    {
+      "record_id": "AP-01184",
+      "rule": "overpayment",
+      "source_row": 1185
+    },
+    {
+      "record_id": "AP-01188",
+      "rule": "overdue_balance",
+      "source_row": 1189
+    },
+    {
+      "record_id": "AP-01189",
+      "rule": "missing_approval",
+      "source_row": 1190
+    },
+    {
+      "record_id": "AP-01189",
+      "rule": "missing_po",
+      "source_row": 1190
+    },
+    {
+      "record_id": "AP-01190",
+      "rule": "overdue_balance",
+      "source_row": 1191
+    },
+    {
+      "record_id": "AP-01199",
+      "rule": "overdue_balance",
+      "source_row": 1200
+    },
+    {
+      "record_id": "AP-01207",
+      "rule": "overdue_balance",
+      "source_row": 1208
+    },
+    {
+      "record_id": "AP-01210",
+      "rule": "overdue_balance",
+      "source_row": 1211
+    },
+    {
+      "record_id": "AP-01218",
+      "rule": "missing_approval",
+      "source_row": 1219
+    },
+    {
+      "record_id": "AP-01219",
+      "rule": "missing_receipt",
+      "source_row": 1220
+    },
+    {
+      "record_id": "AP-01221",
+      "rule": "overpayment",
+      "source_row": 1222
+    },
+    {
+      "record_id": "AP-01224",
+      "rule": "overdue_balance",
+      "source_row": 1225
+    },
+    {
+      "record_id": "AP-01230",
+      "rule": "missing_po",
+      "source_row": 1231
+    },
+    {
+      "record_id": "AP-01232",
+      "rule": "overdue_balance",
+      "source_row": 1233
+    },
+    {
+      "record_id": "AP-01241",
+      "rule": "overdue_balance",
+      "source_row": 1242
+    },
+    {
+      "record_id": "AP-01247",
+      "rule": "missing_approval",
+      "source_row": 1248
+    },
+    {
+      "record_id": "AP-01254",
+      "rule": "overdue_balance",
+      "source_row": 1255
+    },
+    {
+      "record_id": "AP-01258",
+      "rule": "overpayment",
+      "source_row": 1259
+    },
+    {
+      "record_id": "AP-01261",
+      "rule": "duplicate_invoice",
+      "source_row": 1262
+    },
+    {
+      "record_id": "AP-01261",
+      "rule": "overdue_balance",
+      "source_row": 1262
+    },
+    {
+      "record_id": "AP-01265",
+      "rule": "overdue_balance",
+      "source_row": 1266
+    },
+    {
+      "record_id": "AP-01271",
+      "rule": "missing_po",
+      "source_row": 1272
+    },
+    {
+      "record_id": "AP-01272",
+      "rule": "missing_receipt",
+      "source_row": 1273
+    },
+    {
+      "record_id": "AP-01275",
+      "rule": "overdue_balance",
+      "source_row": 1276
+    },
+    {
+      "record_id": "AP-01276",
+      "rule": "missing_approval",
+      "source_row": 1277
+    },
+    {
+      "record_id": "AP-01276",
+      "rule": "overdue_balance",
+      "source_row": 1277
+    },
+    {
+      "record_id": "AP-01295",
+      "rule": "overpayment",
+      "source_row": 1296
+    },
+    {
+      "record_id": "AP-01298",
+      "rule": "overdue_balance",
+      "source_row": 1299
+    },
+    {
+      "record_id": "AP-01305",
+      "rule": "missing_approval",
+      "source_row": 1306
+    },
+    {
+      "record_id": "AP-01309",
+      "rule": "overdue_balance",
+      "source_row": 1310
+    },
+    {
+      "record_id": "AP-01312",
+      "rule": "missing_po",
+      "source_row": 1313
+    },
+    {
+      "record_id": "AP-01320",
+      "rule": "overdue_balance",
+      "source_row": 1321
+    },
+    {
+      "record_id": "AP-01325",
+      "rule": "missing_receipt",
+      "source_row": 1326
+    },
+    {
+      "record_id": "AP-01331",
+      "rule": "overdue_balance",
+      "source_row": 1332
+    },
+    {
+      "record_id": "AP-01332",
+      "rule": "overpayment",
+      "source_row": 1333
+    },
+    {
+      "record_id": "AP-01334",
+      "rule": "missing_approval",
+      "source_row": 1335
+    },
+    {
+      "record_id": "AP-01342",
+      "rule": "overdue_balance",
+      "source_row": 1343
+    },
+    {
+      "record_id": "AP-01353",
+      "rule": "missing_po",
+      "source_row": 1354
+    },
+    {
+      "record_id": "AP-01353",
+      "rule": "overdue_balance",
+      "source_row": 1354
+    },
+    {
+      "record_id": "AP-01358",
+      "rule": "duplicate_invoice",
+      "source_row": 1359
+    },
+    {
+      "record_id": "AP-01358",
+      "rule": "overdue_balance",
+      "source_row": 1359
+    },
+    {
+      "record_id": "AP-01360",
+      "rule": "overdue_balance",
+      "source_row": 1361
+    },
+    {
+      "record_id": "AP-01363",
+      "rule": "missing_approval",
+      "source_row": 1364
+    },
+    {
+      "record_id": "AP-01364",
+      "rule": "overdue_balance",
+      "source_row": 1365
+    },
+    {
+      "record_id": "AP-01369",
+      "rule": "overpayment",
+      "source_row": 1370
+    },
+    {
+      "record_id": "AP-01375",
+      "rule": "overdue_balance",
+      "source_row": 1376
+    },
+    {
+      "record_id": "AP-01378",
+      "rule": "missing_receipt",
+      "source_row": 1379
+    },
+    {
+      "record_id": "AP-01386",
+      "rule": "overdue_balance",
+      "source_row": 1387
+    },
+    {
+      "record_id": "AP-01392",
+      "rule": "missing_approval",
+      "source_row": 1393
+    },
+    {
+      "record_id": "AP-01394",
+      "rule": "missing_po",
+      "source_row": 1395
+    },
+    {
+      "record_id": "AP-01397",
+      "rule": "overdue_balance",
+      "source_row": 1398
+    },
+    {
+      "record_id": "AP-01406",
+      "rule": "overpayment",
+      "source_row": 1407
+    },
+    {
+      "record_id": "AP-01408",
+      "rule": "overdue_balance",
+      "source_row": 1409
+    },
+    {
+      "record_id": "AP-01419",
+      "rule": "overdue_balance",
+      "source_row": 1420
+    },
+    {
+      "record_id": "AP-01421",
+      "rule": "missing_approval",
+      "source_row": 1422
+    },
+    {
+      "record_id": "AP-01428",
+      "rule": "overdue_balance",
+      "source_row": 1429
+    },
+    {
+      "record_id": "AP-01430",
+      "rule": "overdue_balance",
+      "source_row": 1431
+    },
+    {
+      "record_id": "AP-01431",
+      "rule": "missing_receipt",
+      "source_row": 1432
+    },
+    {
+      "record_id": "AP-01435",
+      "rule": "missing_po",
+      "source_row": 1436
+    },
+    {
+      "record_id": "AP-01441",
+      "rule": "overdue_balance",
+      "source_row": 1442
+    },
+    {
+      "record_id": "AP-01443",
+      "rule": "overpayment",
+      "source_row": 1444
+    },
+    {
+      "record_id": "AP-01445",
+      "rule": "overdue_balance",
+      "source_row": 1446
+    },
+    {
+      "record_id": "AP-01450",
+      "rule": "missing_approval",
+      "source_row": 1451
+    },
+    {
+      "record_id": "AP-01452",
+      "rule": "overdue_balance",
+      "source_row": 1453
+    },
+    {
+      "record_id": "AP-01455",
+      "rule": "duplicate_invoice",
+      "source_row": 1456
+    },
+    {
+      "record_id": "AP-01455",
+      "rule": "overdue_balance",
+      "source_row": 1456
+    },
+    {
+      "record_id": "AP-01462",
+      "rule": "overdue_balance",
+      "source_row": 1463
+    },
+    {
+      "record_id": "AP-01463",
+      "rule": "overdue_balance",
+      "source_row": 1464
+    },
+    {
+      "record_id": "AP-01476",
+      "rule": "missing_po",
+      "source_row": 1477
+    },
+    {
+      "record_id": "AP-01479",
+      "rule": "missing_approval",
+      "source_row": 1480
+    },
+    {
+      "record_id": "AP-01479",
+      "rule": "overdue_balance",
+      "source_row": 1480
+    },
+    {
+      "record_id": "AP-01480",
+      "rule": "overpayment",
+      "source_row": 1481
+    },
+    {
+      "record_id": "AP-01484",
+      "rule": "missing_receipt",
+      "source_row": 1485
+    },
+    {
+      "record_id": "AP-01485",
+      "rule": "overdue_balance",
+      "source_row": 1486
+    },
+    {
+      "record_id": "AP-01496",
+      "rule": "overdue_balance",
+      "source_row": 1497
+    }
+  ]
+}

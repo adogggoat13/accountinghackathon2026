@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00137
+Vendor: Prairie Supply 41
+Invoice: VEN-041-00137
+Invoice date: 2026-06-19
+Due: 2026-07-19
+Net USD: 6212.62
+Tax USD: 388.29
+Total USD: 6600.91
+Purchase order: PO-000137
+These are synthetic workshop documents, not real transactions.

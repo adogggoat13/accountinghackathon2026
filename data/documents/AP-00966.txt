@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00966
+Vendor: Oxford Catering 06
+Invoice: VEN-006-00966
+Invoice date: 2026-02-22
+Due: 2026-04-08
+Net USD: 9507.60
+Tax USD: 594.23
+Total USD: 10101.83
+Purchase order: PO-000966
+These are synthetic workshop documents, not real transactions.

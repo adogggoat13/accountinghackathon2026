@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01191
+Vendor: Summit Facilities 39
+Invoice: VEN-039-01191
+Invoice date: 2026-01-03
+Due: 2026-03-04
+Net USD: 6873.93
+Tax USD: 429.62
+Total USD: 7303.55
+Purchase order: PO-001191
+These are synthetic workshop documents, not real transactions.

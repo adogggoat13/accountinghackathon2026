@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01186
+Vendor: Cedar Software 34
+Invoice: VEN-034-01186
+Invoice date: 2026-01-10
+Due: 2026-02-24
+Net USD: 24743.99
+Tax USD: 1546.50
+Total USD: 26290.49
+Purchase order: PO-001186
+These are synthetic workshop documents, not real transactions.

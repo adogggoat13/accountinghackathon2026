@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00995
+Vendor: Prairie Advisory 35
+Invoice: VEN-035-00995
+Invoice date: 2026-02-13
+Due: 2026-04-14
+Net USD: 19297.67
+Tax USD: 1206.10
+Total USD: 20503.77
+Purchase order: PO-000995
+These are synthetic workshop documents, not real transactions.

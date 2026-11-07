@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00381
+Vendor: Summit Printing 45
+Invoice: VEN-045-00381
+Invoice date: 2026-06-28
+Due: 2026-07-28
+Net USD: 14659.85
+Tax USD: 916.24
+Total USD: 15576.09
+Purchase order: PO-000381
+These are synthetic workshop documents, not real transactions.

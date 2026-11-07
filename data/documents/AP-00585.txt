@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00585
+Vendor: Summit Supply 09
+Invoice: VEN-009-00585
+Invoice date: 2026-08-13
+Due: 2026-09-12
+Net USD: 15114.23
+Tax USD: 944.64
+Total USD: 16058.87
+Purchase order: PO-000585
+These are synthetic workshop documents, not real transactions.

@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00737
+Vendor: Prairie Supply 17
+Invoice: VEN-017-00737
+Invoice date: 2026-04-13
+Due: 2026-05-13
+Net USD: 6195.00
+Tax USD: 387.19
+Total USD: 6582.19
+Purchase order: PO-000737
+These are synthetic workshop documents, not real transactions.

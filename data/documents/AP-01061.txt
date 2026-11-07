@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01061
+Vendor: Prairie Printing 05
+Invoice: VEN-005-01061
+Invoice date: 2026-09-15
+Due: 2026-10-15
+Net USD: 13774.24
+Tax USD: 860.89
+Total USD: 14635.13
+Purchase order: PO-001061
+These are synthetic workshop documents, not real transactions.

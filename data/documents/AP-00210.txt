@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00210
+Vendor: Oxford Software 18
+Invoice: VEN-018-00210
+Invoice date: 2026-05-01
+Due: 2026-06-15
+Net USD: 17569.88
+Tax USD: 1098.12
+Total USD: 18668.00
+Purchase order: PO-000210
+These are synthetic workshop documents, not real transactions.

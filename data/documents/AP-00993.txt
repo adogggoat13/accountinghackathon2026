@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00993
+Vendor: Summit Supply 33
+Invoice: VEN-033-00993
+Invoice date: 2026-08-23
+Due: 2026-09-22
+Net USD: 9282.19
+Tax USD: 580.14
+Total USD: 9862.33
+Purchase order: PO-000993
+These are synthetic workshop documents, not real transactions.

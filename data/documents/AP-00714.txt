@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00714
+Vendor: Oxford Software 42
+Invoice: VEN-042-00714
+Invoice date: 2026-06-13
+Due: 2026-07-28
+Net USD: 15626.74
+Tax USD: 976.67
+Total USD: 16603.41
+Purchase order: PO-000714
+These are synthetic workshop documents, not real transactions.

@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01110
+Vendor: Oxford Catering 06
+Invoice: VEN-006-01110
+Invoice date: 2026-05-02
+Due: 2026-06-16
+Net USD: 13359.52
+Tax USD: 834.97
+Total USD: 14194.49
+Purchase order: PO-001110
+These are synthetic workshop documents, not real transactions.

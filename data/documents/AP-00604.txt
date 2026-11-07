@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00604
+Vendor: Cedar Logistics 28
+Invoice: VEN-028-00604
+Invoice date: 2026-09-02
+Due: 2026-09-17
+Net USD: 6242.00
+Tax USD: 390.13
+Total USD: 6632.13
+Purchase order: PO-000604
+These are synthetic workshop documents, not real transactions.

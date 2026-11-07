@@ -1,0 +1,15 @@
+SYNTHETIC DATA GUIDE
+All records are fictional, reproducible from seed 20261106. Dates use YYYY-MM-DD; reporting periods are month/quarter strings. USD amounts have two decimal places. No answer labels appear in the input files.
+
+invoices.csv: 1,500 rows, primary key record_id, business invoice key vendor_id + invoice_number (deliberately not unique). The 31 columns include vendor/company/department, category, invoice and due dates, service period, currency, net/tax/gross/paid amounts, approval status/role/date, PO, receipt state, payment terms/method, contract, document/page, batch, fixed as-of date, synthetic flag and description. Gross amount = net + tax. paid_usd aggregates linked payments. source_document points to an actual included TXT invoice. approval data reflects the separate synthetic internal process.
+payments.csv: 1,424 rows. invoice_record_id joins invoices.record_id; some invoices have split payments. Per-invoice payment sums equal paid_usd exactly. No unmatched payments in this version.
+vendors.csv: 48 counterparties, names, categories, terms and tax-form status. vendor_id joins record_id.
+monthly_financials.csv: 36 rows across three fictional companies. Monthly revenue/cost/budgets, opening cash, receipts, operating payments, capex, financing and closing cash. Cash roll-forward reconciles; June financing is explicit. These are separate scenario books, not a ledger tied to AP totals.
+loan_covenants.csv: 36 borrower-quarter records, gross debt, trailing EBITDA, debt service and cash flow, plus max leverage/min DSCR. Definitions are in documents/loan-policy.txt. Borrowers are separate from the company financials case.
+portfolio_holdings.csv: 120 holdings across six accounts, synthetic securities/sectors, market value and annual fee basis points. Holdings across accounts can overlap; not real market prices.
+campus_expenses.csv: 240 event expenses, line-level budgets, receipt/approval and reimbursement state. budget_usd is per expense line, not an event budget to deduplicate. No participant bank information.
+deal_metrics.csv: two conflicting source reports for one target and period. The three associated documents support revenue, cash and unsigned-contract review.
+
+Cases and schemas: data/manifest.json. Expected AP findings and deal conflicts: validation/. The AP rules detect repeated IDs, overpayments, unapproved rows, missing PO/receipts and overdue open balances at September 30, 2026. Findings can overlap. Gross totals include duplicates. These are review signals, not fraud labels.
+
+Do not load validation answers into an AI evaluation prompt. Other challenges can use these schemas but may require explicitly synthetic supplementary fields. The pack does not claim all 30 challenges have complete specialized input data. Challenges 26-30 expect public APIs or synthetic fixtures described in their prompt files.

@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00534
+Vendor: Oxford Catering 06
+Invoice: VEN-006-00534
+Invoice date: 2026-06-03
+Due: 2026-07-18
+Net USD: 10572.97
+Tax USD: 660.81
+Total USD: 11233.78
+Purchase order: PO-000534
+These are synthetic workshop documents, not real transactions.

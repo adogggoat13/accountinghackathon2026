@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00099
+Vendor: Summit Advisory 03
+Invoice: VEN-003-00099
+Invoice date: 2026-05-31
+Due: 2026-07-30
+Net USD: 2934.12
+Tax USD: 183.38
+Total USD: 3117.50
+Purchase order: PO-000099
+These are synthetic workshop documents, not real transactions.

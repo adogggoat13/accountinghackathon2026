@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00637
+Vendor: Maple Printing 13
+Invoice: VEN-013-00637
+Invoice date: 2026-07-04
+Due: 2026-08-03
+Net USD: 24973.23
+Tax USD: 1560.83
+Total USD: 26534.06
+Purchase order: PO-000637
+These are synthetic workshop documents, not real transactions.

@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01107
+Vendor: Summit Advisory 03
+Invoice: VEN-003-01107
+Invoice date: 2026-02-08
+Due: 2026-04-09
+Net USD: 1190.57
+Tax USD: 74.41
+Total USD: 1264.98
+Purchase order: Not supplied
+These are synthetic workshop documents, not real transactions.

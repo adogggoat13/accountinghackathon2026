@@ -1,0 +1,36 @@
+import {PGlite} from '@electric-sql/pglite';
+import fs from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const db=new PGlite();
+await db.exec(`create role anon;create role authenticated;create schema auth;create table auth.users(id uuid primary key);create function auth.uid() returns uuid language sql stable as $$select nullif(current_setting('request.jwt.claim.sub',true),'')::uuid$$;grant usage on schema auth to authenticated;grant execute on function auth.uid() to authenticated;create schema storage;create table storage.buckets(id text primary key,name text,public boolean,file_size_limit bigint,allowed_mime_types text[]);create table storage.objects(id uuid default gen_random_uuid(),bucket_id text,name text);alter table storage.objects enable row level security;grant usage on schema storage to authenticated;grant select,insert,update,delete on storage.objects to authenticated;`);
+await db.exec(await fs.readFile(new URL('../supabase/migrations/202610050001_baseline.sql',import.meta.url),'utf8'));
+const alice='00000000-0000-4000-8000-000000000001',bob='00000000-0000-4000-8000-000000000002',eve='00000000-0000-4000-8000-000000000003';
+await db.exec(`insert into auth.users values('${alice}'),('${bob}'),('${eve}');`);
+async function as(user){await db.exec(`reset role;set role authenticated;set request.jwt.claim.sub='${user}';`);}
+let checks=0;async function denied(sql){await assert.rejects(db.exec(sql));checks++;}
+await as(alice);const team=(await db.query("insert into rhb_teams(name) values('Alpha') returning id")).rows[0].id;checks++;
+await db.exec(`insert into rhb_members values('${team}','${bob}');`);
+await denied(`update rhb_teams set owner_id='${eve}' where id='${team}'`);
+await as(bob);assert.equal((await db.query('select * from rhb_teams')).rows.length,1);checks++;
+await denied(`insert into rhb_members values('${team}','${eve}')`);
+const ds=(await db.query(`insert into rhb_datasets(team_id,name,source) values('${team}','test','synthetic') returning id`)).rows[0].id;
+await db.exec(`insert into rhb_records(team_id,dataset_id,record_key,payload,source_row) values('${team}','${ds}','1','{}',2);`);
+await db.exec(`insert into storage.objects(bucket_id,name) values('rhb-documents','${team}/sample.txt')`);checks++;
+const document=(await db.query(`insert into rhb_documents(team_id,filename,storage_path,sha256,media_type) values('${team}','sample.txt','${team}/sample.txt','${'a'.repeat(64)}','text/plain') returning id`)).rows[0].id;
+await db.query('select rhb_save_document_text($1,$2,$3)',[document,'hello',JSON.stringify([{start_offset:0,end_offset:5,quote:'hello'}])]);
+assert.equal((await db.query('select * from rhb_evidence')).rows.length,1);checks++;
+await assert.rejects(db.query('select rhb_save_document_text($1,$2,$3)',[document,'changed',JSON.stringify([{start_offset:10,end_offset:2,quote:'invalid'}])]));
+assert.equal((await db.query('select parsed_text from rhb_documents')).rows[0].parsed_text,'hello');checks++;
+await as(eve);assert.equal((await db.query('select * from rhb_teams')).rows.length,0);assert.equal((await db.query('select * from rhb_records')).rows.length,0);assert.equal((await db.query('select * from storage.objects')).rows.length,0);checks+=3;
+await assert.rejects(db.query('select rhb_save_document_text($1,$2,$3)',[document,'evil','[]']));checks++;
+await denied(`insert into rhb_members values('${team}','${eve}')`);
+await denied(`insert into rhb_records(team_id,dataset_id,record_key,payload,source_row) values('${team}','${ds}','2','{}',2)`);
+await denied(`insert into storage.objects(bucket_id,name) values('rhb-documents','${team}/evil.txt')`);
+assert.equal((await db.query(`update rhb_records set payload='{"changed":true}' where team_id='${team}' returning id`)).rows.length,0);checks++;
+assert.equal((await db.query(`delete from rhb_records where team_id='${team}' returning id`)).rows.length,0);checks++;
+const other=(await db.query("insert into rhb_teams(name) values('Other') returning id")).rows[0].id;
+await denied(`insert into rhb_records(team_id,dataset_id,record_key,payload,source_row) values('${other}','${ds}','cross','{}',2)`);
+await as(alice);await db.exec(`delete from rhb_members where team_id='${team}' and user_id='${bob}'`);
+await as(bob);assert.equal((await db.query('select * from rhb_records')).rows.length,0);checks++;
+await db.exec('reset role;set role anon;');await denied('select * from rhb_teams');await denied('select * from rhb_records');
+await db.close();console.log(`PASS: ${checks} database checks, including team isolation, revocation, ownership, storage access and cross-team foreign keys. PostgreSQL engine: PGlite; Supabase Auth/Storage schemas simulated, hosted services not exercised.`);

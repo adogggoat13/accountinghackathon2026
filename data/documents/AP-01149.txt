@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01149
+Vendor: Summit Printing 45
+Invoice: VEN-045-01149
+Invoice date: 2026-01-28
+Due: 2026-02-27
+Net USD: 4580.96
+Tax USD: 286.31
+Total USD: 4867.27
+Purchase order: PO-001149
+These are synthetic workshop documents, not real transactions.

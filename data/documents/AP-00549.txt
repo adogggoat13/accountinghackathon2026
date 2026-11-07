@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00549
+Vendor: Summit Printing 21
+Invoice: VEN-021-00549
+Invoice date: 2026-09-24
+Due: 2026-10-24
+Net USD: 19719.19
+Tax USD: 1232.45
+Total USD: 20951.64
+Purchase order: PO-000549
+These are synthetic workshop documents, not real transactions.

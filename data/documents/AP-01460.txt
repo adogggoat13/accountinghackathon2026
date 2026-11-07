@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01460
+Vendor: River Logistics 20
+Invoice: VEN-020-01460
+Invoice date: 2026-03-03
+Due: 2026-03-18
+Net USD: 24234.74
+Tax USD: 1514.67
+Total USD: 25749.41
+Purchase order: PO-001460
+These are synthetic workshop documents, not real transactions.

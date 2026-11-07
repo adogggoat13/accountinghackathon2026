@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01174
+Vendor: Cedar Catering 22
+Invoice: VEN-022-01174
+Invoice date: 2026-04-09
+Due: 2026-05-24
+Net USD: 3189.20
+Tax USD: 199.33
+Total USD: 3388.53
+Purchase order: PO-001174
+These are synthetic workshop documents, not real transactions.

@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01277
+Vendor: Prairie Printing 29
+Invoice: VEN-029-01277
+Invoice date: 2026-07-14
+Due: 2026-08-13
+Net USD: 23122.30
+Tax USD: 1445.14
+Total USD: 24567.44
+Purchase order: PO-001277
+These are synthetic workshop documents, not real transactions.

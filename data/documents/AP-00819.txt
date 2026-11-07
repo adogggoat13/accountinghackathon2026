@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00819
+Vendor: Summit Advisory 03
+Invoice: VEN-003-00819
+Invoice date: 2026-01-21
+Due: 2026-03-22
+Net USD: 16834.77
+Tax USD: 1052.17
+Total USD: 17886.94
+Purchase order: PO-000819
+These are synthetic workshop documents, not real transactions.

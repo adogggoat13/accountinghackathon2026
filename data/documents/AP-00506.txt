@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00506
+Vendor: River Software 26
+Invoice: VEN-026-00506
+Invoice date: 2026-09-20
+Due: 2026-11-04
+Net USD: 12844.77
+Tax USD: 802.80
+Total USD: 13647.57
+Purchase order: PO-000506
+These are synthetic workshop documents, not real transactions.

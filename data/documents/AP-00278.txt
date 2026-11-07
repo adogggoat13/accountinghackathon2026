@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00278
+Vendor: River Catering 38
+Invoice: VEN-038-00278
+Invoice date: 2026-07-30
+Due: 2026-09-13
+Net USD: 2304.84
+Tax USD: 144.05
+Total USD: 2448.89
+Purchase order: PO-000278
+These are synthetic workshop documents, not real transactions.

@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01039
+Vendor: Maple Facilities 31
+Invoice: VEN-031-01039
+Invoice date: 2026-06-06
+Due: 2026-08-05
+Net USD: 1871.28
+Tax USD: 116.96
+Total USD: 1988.24
+Purchase order: PO-001039
+These are synthetic workshop documents, not real transactions.

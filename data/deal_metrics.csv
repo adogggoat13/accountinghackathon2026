@@ -1,0 +1,3 @@
+"record_id","company_id","period","source","revenue_usd","cash_usd","debt_usd","currency","synthetic"
+"DEAL-01","TARGET-01","2026-Q3","management_summary","1250000.00","480000.00","900000.00","USD","true"
+"DEAL-02","TARGET-01","2026-Q3","finance_report","1175000.00","410000.00","900000.00","USD","true"

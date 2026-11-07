@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01202
+Vendor: River Software 02
+Invoice: VEN-002-01202
+Invoice date: 2026-01-15
+Due: 2026-03-01
+Net USD: 6400.25
+Tax USD: 400.02
+Total USD: 6800.27
+Purchase order: PO-001202
+These are synthetic workshop documents, not real transactions.

@@ -1,0 +1,2 @@
+FICTIONAL LOAN POLICY
+Leverage is gross debt divided by trailing twelve-month EBITDA, maximum 3.00. DSCR is trailing twelve-month available cash flow divided by trailing twelve-month debt service, minimum 1.20. These definitions apply only to this synthetic exercise.

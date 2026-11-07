@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01187
+Vendor: Prairie Advisory 35
+Invoice: VEN-035-01187
+Invoice date: 2026-04-28
+Due: 2026-06-27
+Net USD: 501.67
+Tax USD: 31.35
+Total USD: 533.02
+Purchase order: PO-001187
+These are synthetic workshop documents, not real transactions.

@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00933
+Vendor: Summit Printing 21
+Invoice: VEN-021-00933
+Invoice date: 2026-04-11
+Due: 2026-05-11
+Net USD: 2036.83
+Tax USD: 127.30
+Total USD: 2164.13
+Purchase order: PO-000933
+These are synthetic workshop documents, not real transactions.

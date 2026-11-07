@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00811
+Vendor: Maple Advisory 43
+Invoice: VEN-043-00811
+Invoice date: 2026-04-07
+Due: 2026-06-06
+Net USD: 17315.40
+Tax USD: 1082.21
+Total USD: 18397.61
+Purchase order: PO-000811
+These are synthetic workshop documents, not real transactions.

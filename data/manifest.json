@@ -1,0 +1,206 @@
+{
+  "version": "1.0",
+  "seed": 20261106,
+  "as_of": "2026-09-30",
+  "currency": "USD",
+  "tables": {
+    "vendors": {
+      "rows": 48,
+      "columns": [
+        "record_id",
+        "vendor_name",
+        "category",
+        "terms_days",
+        "tax_form_on_file",
+        "active",
+        "country",
+        "synthetic"
+      ],
+      "primary_key": "record_id",
+      "synthetic": true
+    },
+    "invoices": {
+      "rows": 1500,
+      "columns": [
+        "record_id",
+        "invoice_number",
+        "vendor_id",
+        "vendor_name",
+        "company_id",
+        "company_name",
+        "department",
+        "cost_center",
+        "category",
+        "invoice_date",
+        "due_date",
+        "service_period",
+        "currency",
+        "net_usd",
+        "tax_usd",
+        "amount_usd",
+        "paid_usd",
+        "approval_status",
+        "approver_role",
+        "approval_date",
+        "po_number",
+        "receipt_status",
+        "payment_terms_days",
+        "payment_method",
+        "contract_id",
+        "source_document",
+        "source_page",
+        "import_batch",
+        "as_of_date",
+        "synthetic",
+        "description"
+      ],
+      "primary_key": "record_id",
+      "synthetic": true
+    },
+    "payments": {
+      "rows": 1424,
+      "columns": [
+        "record_id",
+        "invoice_record_id",
+        "vendor_id",
+        "payment_date",
+        "currency",
+        "amount_usd",
+        "bank_reference",
+        "method",
+        "synthetic"
+      ],
+      "primary_key": "record_id",
+      "synthetic": true
+    },
+    "monthly_financials": {
+      "rows": 36,
+      "columns": [
+        "record_id",
+        "company_id",
+        "period",
+        "scenario",
+        "currency",
+        "revenue_usd",
+        "cogs_usd",
+        "opex_usd",
+        "budget_revenue_usd",
+        "budget_opex_usd",
+        "opening_cash_usd",
+        "cash_receipts_usd",
+        "cash_operating_payments_usd",
+        "capex_usd",
+        "financing_usd",
+        "closing_cash_usd",
+        "headcount",
+        "synthetic"
+      ],
+      "primary_key": "record_id",
+      "synthetic": true
+    },
+    "loan_covenants": {
+      "rows": 36,
+      "columns": [
+        "record_id",
+        "borrower_id",
+        "period",
+        "currency",
+        "debt_usd",
+        "ttm_ebitda_usd",
+        "ttm_debt_service_usd",
+        "ttm_available_cashflow_usd",
+        "max_leverage",
+        "min_dscr",
+        "source_document",
+        "synthetic"
+      ],
+      "primary_key": "record_id",
+      "synthetic": true
+    },
+    "portfolio_holdings": {
+      "rows": 120,
+      "columns": [
+        "record_id",
+        "account_id",
+        "security_id",
+        "sector",
+        "currency",
+        "market_value_usd",
+        "annual_fee_bps",
+        "as_of_date",
+        "synthetic"
+      ],
+      "primary_key": "record_id",
+      "synthetic": true
+    },
+    "campus_expenses": {
+      "rows": 240,
+      "columns": [
+        "record_id",
+        "organization_id",
+        "event_id",
+        "category",
+        "expense_date",
+        "currency",
+        "amount_usd",
+        "budget_usd",
+        "receipt_status",
+        "approval_status",
+        "reimbursed",
+        "synthetic"
+      ],
+      "primary_key": "record_id",
+      "synthetic": true
+    },
+    "deal_metrics": {
+      "rows": 2,
+      "columns": [
+        "record_id",
+        "company_id",
+        "period",
+        "source",
+        "revenue_usd",
+        "cash_usd",
+        "debt_usd",
+        "currency",
+        "synthetic"
+      ],
+      "primary_key": "record_id",
+      "synthetic": true
+    }
+  },
+  "cases": {
+    "accounts_payable": [
+      "invoices",
+      "payments",
+      "vendors"
+    ],
+    "cash_flow_and_variance": [
+      "monthly_financials"
+    ],
+    "credit_covenants": [
+      "loan_covenants"
+    ],
+    "portfolio_and_fees": [
+      "portfolio_holdings"
+    ],
+    "campus_finance": [
+      "campus_expenses"
+    ],
+    "deal_due_diligence": [
+      "deal_metrics"
+    ]
+  },
+  "relationships": [
+    "invoices.vendor_id -> vendors.record_id",
+    "payments.invoice_record_id -> invoices.record_id",
+    "payments.vendor_id -> vendors.record_id"
+  ],
+  "limitations": [
+    "Every entity and amount is fictional. No external personal or bank account data.",
+    "Six cases are independent exercises except explicit foreign-key relationships.",
+    "AP totals retain duplicates; do not treat them as verified liabilities.",
+    "FP&A uses same-month receipts and payments; financing is explicitly recorded.",
+    "2026 full-year FP&A rows are synthetic scenario data, not claims about actual future results."
+  ]
+}

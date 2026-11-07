@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01056
+Vendor: Oxford Analytics 48
+Invoice: VEN-048-01056
+Invoice date: 2026-02-18
+Due: 2026-03-05
+Net USD: 15639.57
+Tax USD: 977.47
+Total USD: 16617.04
+Purchase order: PO-001056
+These are synthetic workshop documents, not real transactions.

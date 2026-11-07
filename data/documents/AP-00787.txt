@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00787
+Vendor: Maple Advisory 19
+Invoice: VEN-019-00787
+Invoice date: 2026-03-09
+Due: 2026-05-08
+Net USD: 406.35
+Tax USD: 25.40
+Total USD: 431.75
+Purchase order: PO-000787
+These are synthetic workshop documents, not real transactions.

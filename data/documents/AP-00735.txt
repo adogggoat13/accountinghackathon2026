@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00735
+Vendor: Summit Facilities 15
+Invoice: VEN-015-00735
+Invoice date: 2026-08-16
+Due: 2026-10-15
+Net USD: 697.76
+Tax USD: 43.61
+Total USD: 741.37
+Purchase order: PO-000735
+These are synthetic workshop documents, not real transactions.

@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01071
+Vendor: Summit Facilities 15
+Invoice: VEN-015-01071
+Invoice date: 2026-02-11
+Due: 2026-04-12
+Net USD: 19335.10
+Tax USD: 1208.44
+Total USD: 20543.54
+Purchase order: PO-001071
+These are synthetic workshop documents, not real transactions.

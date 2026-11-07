@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00184
+Vendor: Cedar Analytics 40
+Invoice: VEN-040-00184
+Invoice date: 2026-08-26
+Due: 2026-09-10
+Net USD: 7793.38
+Tax USD: 487.09
+Total USD: 8280.47
+Purchase order: PO-000184
+These are synthetic workshop documents, not real transactions.

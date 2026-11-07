@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-01077
+Vendor: Summit Printing 21
+Invoice: VEN-021-01077
+Invoice date: 2026-01-05
+Due: 2026-02-04
+Net USD: 16446.22
+Tax USD: 1027.89
+Total USD: 17474.11
+Purchase order: PO-001077
+These are synthetic workshop documents, not real transactions.

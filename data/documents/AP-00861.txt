@@ -1,0 +1,10 @@
+FICTIONAL INVOICE — AP-00861
+Vendor: Summit Printing 45
+Invoice: VEN-045-00861
+Invoice date: 2026-03-02
+Due: 2026-04-01
+Net USD: 18903.60
+Tax USD: 1181.48
+Total USD: 20085.08
+Purchase order: Not supplied
+These are synthetic workshop documents, not real transactions.
