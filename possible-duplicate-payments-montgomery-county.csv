@@ -1,0 +1,10 @@
+vendor_id,vendor_label,invoice_id,invoice_line,payments_count,amount_each_usd,total_paid_usd,possible_excess_usd,last_payment_date
+78551,Individual payee (name withheld),EB-11212-CNR-JFM-2024,1,2,492.81,985.62,492.81,7/23/2024
+86029,Individual payee (name withheld),SF-16776-CNR-OND-2023,1,2,338.6,677.2,338.6,5/2/2024
+15993,BOUND TREE MEDICAL LLC,85957920,1,2,212.42,424.84,212.42,10/29/2025
+84105,Individual payee (name withheld),SK-9906-CNR-OND-2023,1,2,186.27,372.54,186.27,5/2/2024
+84265,Individual payee (name withheld),FY-11577-CNR-AMJ-2024,1,2,145.12,290.24,145.12,11/18/2025
+78469,Individual payee (name withheld),SM-12966-CNR-OND-2023,1,2,86.83,173.66,86.83,5/2/2024
+83407,Individual payee (name withheld),SA-7264-CNR-OND-2023,1,2,32.91,65.82,32.91,5/2/2024
+86387,Individual payee (name withheld),SR-4582-CNR-OND-2023,1,2,19.5,39,19.5,5/2/2024
+95085,Individual payee (name withheld),SW-10188-CNR-OND-2023,1,2,4,8,4,5/2/2024

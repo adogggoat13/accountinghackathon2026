@@ -1,0 +1,3 @@
+record,vendor_id,vendor,department,po_num,invoice_id,invoice_line,inv_date,amount_usd,payment_id,payment_date,payment_method,payment_status,description
+1,15993,BOUND TREE MEDICAL LLC,Health and Human Services,1186706,85957920,1,10/14/2025,212.42,844069,10/28/2025,EFT,RECONCILED,Clinic Supplies
+2,15993,BOUND TREE MEDICAL LLC,Health and Human Services,1186706,85957920,1,10/14/2025,212.42,844239,10/29/2025,EFT,RECONCILED,Clinic Supplies

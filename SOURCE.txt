@@ -1,0 +1,28 @@
+REAL PUBLIC DATA — Montgomery County, Maryland, "County Spending" open dataset
+Dataset: https://data.montgomerycountymd.gov/d/vpf9-6irq   (API: /resource/vpf9-6irq.json)
+Publisher: Montgomery County Government. Retrieved Sat Nov 7, 2026, via Firecrawl.
+
+WHAT WAS QUERIED
+Invoice lines with payment_date after 2023-07-01 that have:
+ - 2+ distinct payment IDs
+ - exactly one invoice date
+ - the same positive amount on every payment
+Result: 9 invoice lines, possible excess $1,518.46 (sum of one payment per line).
+Exact query is the URL in the 'source' notes of the Claude chat; rerun to reproduce.
+
+CHECKS DONE
+ - Bound Tree Medical (vendor 15993): both payments RECONCILED, EFT, Oct 28 and Oct 29 2025, same PO 1186706.
+   No offsetting -212.42 credit for this vendor after Oct 2025 (only credit since: -596.10 on a different invoice, May 2026).
+
+NOT YET CHECKED — say this to judges
+ - Payment statuses for the other 8 (a voided first payment + reissue would look identical).
+ - Credits recorded under a different invoice ID, or refunds outside this ledger.
+ - Public data shows what was paid, not the vendor's billed amount.
+These are POSSIBLE duplicates for a reviewer, not confirmed errors.
+
+PRIVACY
+Eight payees are individuals. Names are withheld here; use the Bound Tree Medical case (a company) in the demo.
+
+ALSO AVAILABLE (same invoice + payment structure, not yet pulled)
+ State of Connecticut Open Expenditures Ledger (data.ct.gov ajdm-rvz7), Fulton County GA Vendor Payments
+ (data.fultoncountyga.gov mxhc-krcg), Checkbook L.A. (controllerdata.lacity.org pggv-e4fn).
