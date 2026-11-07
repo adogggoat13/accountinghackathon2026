@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Overpayment Review</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top">
+  <a href="/" class="wordmark">Overpayment Review</a>
+  <span class="meta">Local workspace · USD · calculations run on this computer</span>
+</header>
+
+<main>
+  <section class="intro">
+    <p class="eyebrow">ACCOUNTS PAYABLE · PAYMENT VERIFICATION</p>
+    <h1>Was this invoice paid more than once?</h1>
+    <p class="lede">Load invoices and payments. Every flag shows the records behind it, the arithmetic, and what to check next.</p>
+  </section>
+
+  <!-- 1. Choose data -->
+  <section class="panel" aria-labelledby="load-title">
+    <div class="panel-head"><h2 id="load-title">1 · Choose records</h2><span class="hint" id="source-label">Nothing loaded</span></div>
+    <div class="sources" role="tablist" aria-label="Data source">
+      <button class="source" role="tab" data-source="manual" aria-selected="true">Enter numbers</button>
+      <button class="source" role="tab" data-source="real" aria-selected="false">Real case: Montgomery County, MD</button>
+      <button class="source" role="tab" data-source="sample" aria-selected="false">Starter data (1,500 invoices)</button>
+      <button class="source" role="tab" data-source="upload" aria-selected="false">Upload CSV files</button>
+    </div>
+
+    <div class="source-body" id="body-manual">
+      <p class="hint">Type one invoice and its payments. Try a $10,000.00 bill with payments of $6,000.00 and $4,000.00, then change the second to $4,250.00.</p>
+      <form id="manual" novalidate>
+        <div class="grid3">
+          <label>Vendor ID<input name="vendorId" value="VEN-JUDGE" autocomplete="off"></label>
+          <label>Invoice number<input name="invoiceNumber" value="INV-1042" autocomplete="off"></label>
+          <label>Amount billed (USD)<input name="amount" value="10000.00" class="money" inputmode="decimal" autocomplete="off"></label>
+        </div>
+        <div class="pay-head"><h3>Payments</h3><button type="button" id="add-payment" class="ghost">Add payment</button></div>
+        <div id="manual-payments"></div>
+        <div class="row-end"><label class="inline">Review through<input type="date" name="asOf" value="2026-11-07"></label><button class="primary" type="submit">Check payments</button></div>
+      </form>
+    </div>
+
+    <div class="source-body" id="body-real" hidden>
+      <p>Montgomery County, Maryland publishes every payment it makes. On <strong>Oct 28</strong> and again on <strong>Oct 29, 2025</strong>, it paid Bound Tree Medical <strong>$212.42</strong> for the same line of invoice 85957920, under two payment IDs.</p>
+      <p class="hint">Public record: <a href="https://data.montgomerycountymd.gov/d/vpf9-6irq" target="_blank" rel="noopener">County Spending dataset</a>. The public ledger shows payments, not the vendor's bill, so we assume the line was billed once at $212.42. A voided-and-reissued payment would look the same; this is a case for review, not a confirmed error.</p>
+      <button class="primary" id="load-real">Load the Bound Tree case</button>
+    </div>
+
+    <div class="source-body" id="body-sample" hidden>
+      <p>The Redhawk Builds starter pack: 1,500 fictional invoices and 1,424 payments from 48 vendors, reviewed through Sept 30, 2026.</p>
+      <button class="primary" id="load-sample">Load starter data</button>
+    </div>
+
+    <div class="source-body" id="body-upload" hidden>
+      <p>Two CSV files with a header row. Files stay in this browser.</p>
+      <div class="grid2">
+        <label>Invoices CSV<input type="file" id="file-invoices" accept=".csv,text/csv"></label>
+        <label>Payments CSV<input type="file" id="file-payments" accept=".csv,text/csv"></label>
+      </div>
+      <details class="formats"><summary>Column names we read</summary>
+        <table class="plain"><thead><tr><th>File</th><th>Required</th><th>Optional</th></tr></thead><tbody>
+          <tr><td>Invoices</td><td><code>invoice_id</code> · <code>vendor_id</code> · <code>amount</code></td><td><code>invoice_number</code> (needed for the duplicate-bill check) · <code>vendor_name</code> · <code>currency</code></td></tr>
+          <tr><td>Payments</td><td><code>payment_id</code> · <code>vendor_id</code> · <code>amount</code> · <code>payment_date</code> (YYYY-MM-DD)</td><td><code>invoice_id</code> (blank = needs matching) · <code>currency</code></td></tr>
+        </tbody></table>
+        <p class="hint">Starter-pack names such as <code>record_id</code>, <code>amount_usd</code> and <code>invoice_record_id</code> are read too. Amounts like <code>$1,234.50</code> and <code>(250.00)</code> are accepted; anything else is reported with its row number. Templates: <a href="/samples/invoices-template.csv" download>invoices</a> · <a href="/samples/payments-template.csv" download>payments</a>.</p>
+      </details>
+      <div class="row-end"><label class="inline">Review through<input type="date" id="upload-asof" value="2026-11-07"></label><button class="primary" id="load-upload">Check uploaded files</button></div>
+    </div>
+    <p id="error" class="error" role="alert" hidden></p>
+  </section>
+
+  <!-- 2. Findings -->
+  <section class="panel" id="findings" aria-labelledby="findings-title" hidden>
+    <div class="panel-head"><h2 id="findings-title">2 · Findings</h2><span class="hint" id="findings-asof"></span></div>
+    <dl class="counts" id="counts"></dl>
+    <p class="pattern" id="pattern" hidden></p>
+    <div class="filters" role="tablist" aria-label="Filter findings" id="filters"></div>
+    <div class="table-wrap">
+      <table class="queue">
+        <thead><tr><th>Status</th><th>Vendor</th><th>Invoice</th><th class="num">Billed</th><th class="num">Paid</th><th class="num">Difference</th></tr></thead>
+        <tbody id="queue"></tbody>
+      </table>
+    </div>
+    <p class="hint" id="queue-note"></p>
+  </section>
+
+  <!-- 3. Case -->
+  <section class="panel case" id="case" aria-labelledby="case-title" hidden>
+    <div class="panel-head"><h2 id="case-title">3 · Case</h2><button class="ghost" id="close-case">Back to findings</button></div>
+    <div id="case-body"></div>
+    <form id="decision" class="decision">
+      <h3>Record your review</h3>
+      <div class="decision-row">
+        <label>Decision<select id="decision-choice" required>
+          <option value="">Choose…</option>
+          <option>Request refund or credit from vendor</option>
+          <option>Needs investigation</option>
+          <option>Explained — no action</option>
+          <option>Resolved</option>
+        </select></label>
+        <label class="grow">Note<textarea id="decision-note" rows="2" maxlength="2000" placeholder="What did you check, and what happens next?"></textarea></label>
+        <button class="primary" type="submit">Save review</button>
+      </div>
+      <p id="decision-msg" class="hint" role="status"></p>
+      <div id="history"></div>
+    </form>
+  </section>
+
+  <details class="how"><summary>How the check works</summary>
+    <ul>
+      <li>A payment counts toward an invoice only when it names that invoice and the same vendor. IDs are compared without spaces or capitals.</li>
+      <li>Difference = payments − amount billed, in whole cents. Above zero is <strong>Overpaid</strong>; zero is <strong>Paid in full</strong>; below zero is a <strong>Remaining balance</strong>.</li>
+      <li>The same payment ID imported twice counts once. The same ID with different details is held for review.</li>
+      <li>Two invoice records with the same vendor and invoice number are a <strong>Possible duplicate bill</strong>.</li>
+      <li>Unclear payments, refunds and credits hold only the invoices they could affect, with a recommended next step.</li>
+      <li>Flags are possible problems for a reviewer, not proof of fraud. Saved reviews stay in this browser.</li>
+    </ul>
+  </details>
+</main>
+<footer>Redhawk Builds 2026 · Challenge 10 · Engine: <code>engine/review.mjs</code> · Rules: <code>DECISIONS.md</code></footer>
+<script type="module" src="/app.js"></script>
+</body>
+</html>
