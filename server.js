@@ -6,6 +6,14 @@ import {analyzeInvoices,runway} from './lib/finance.js';
 import {authenticate,checked,importRows} from './lib/supabase.js';
 import {uploadDocument,startParse,getParse,saveText} from './lib/documents.js';
 import {searchEvidence} from './lib/citations.js';
+const JS='text/javascript',CSV='text/csv';
+const STATIC=new Map([
+ ['/',['./app/index.html','text/html']],['/style.css',['./app/style.css','text/css']],['/app.js',['./app/app.js',JS]],
+ ['/engine/review.mjs',['./engine/review.mjs',JS]],['/lib/finance.js',['./lib/finance.js',JS]],
+ ['/data/invoices.csv',['./data/invoices.csv',CSV]],['/data/payments.csv',['./data/payments.csv',CSV]],
+ ['/data/real/montgomery-bound-tree-85957920.csv',['./data/real/montgomery-bound-tree-85957920.csv',CSV]],
+ ['/samples/invoices-template.csv',['./app/samples/invoices-template.csv',CSV]],['/samples/payments-template.csv',['./app/samples/payments-template.csv',CSV]],
+]);
 const uuid=x=>typeof x==='string'&&/^[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}$/i.test(x);
 async function body(req){let size=0;const chunks=[];for await(const c of req){size+=c.length;if(size>7_100_000)throw Error('Request exceeds 7 MB');chunks.push(c);}return JSON.parse(Buffer.concat(chunks).toString()||'{}');}
 export function createServer(){return http.createServer(async(req,res)=>{
@@ -18,7 +26,9 @@ export function createServer(){return http.createServer(async(req,res)=>{
   if(req.method==='GET'&&p==='/api/sample')return send(200,analyzeInvoices(parseCSV(await fs.readFile(new URL('./data/invoices.csv',import.meta.url),'utf8'))));
   if(req.method==='POST'&&p==='/api/analyze'){const b=await body(req);return send(200,analyzeInvoices(parseCSV(b.csv),{asOf:b.asOf||'2026-09-30'}));}
   if(req.method==='POST'&&p==='/api/runway')return send(200,runway(await body(req)));
-  if(!p.startsWith('/api/'))return send(404,{error:'API-only starter. See README.txt.'});
+  // Overpayment review website: a fixed allowlist of static files (no directory browsing).
+  if(req.method==='GET'&&STATIC.has(p)){const [file,type]=STATIC.get(p);res.writeHead(200,{'Content-Type':type+'; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});return res.end(await fs.readFile(new URL(file,import.meta.url)));}
+  if(!p.startsWith('/api/'))return send(404,{error:'Not found. Open http://127.0.0.1:4180/ for the review app.'});
   const token=req.headers.authorization?.match(/^Bearer (.+)$/)?.[1];if(!token)return send(401,{error:'Signed-in Supabase user token required'});
   let db;try{db=await authenticate(token);}catch{return send(401,{error:'Supabase configuration or user authentication failed'});}
   if(p==='/api/teams'&&req.method==='GET')return send(200,checked(await db.from('rhb_teams').select('*')));
@@ -51,4 +61,4 @@ export function createServer(){return http.createServer(async(req,res)=>{
   return send(404,{error:'Route not found'});
  }catch(error){send(400,{error:error.message});}
 });}
-if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href){createServer().listen(Number(process.env.PORT)||4180,'127.0.0.1',()=>console.log('Redhawk backend: http://127.0.0.1:'+(process.env.PORT||4180)+'/api/health'));}
+if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href){createServer().listen(Number(process.env.PORT)||4180,'127.0.0.1',()=>console.log('Overpayment review: http://127.0.0.1:'+(process.env.PORT||4180)+'/'));}
